@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Edison技术博客</title>
+  <title>js常用正则表达式 | Edison技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Edison技术博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="整数或者小数：^[0-9]+.{0,1}[0-9]{0,2}$只能输入数字：”^[0-9]$”。只能输入n位的数字：”^\d{n}$”。只能输入至少n位的数字：”^\d{n,}$”。只能输入m~n位的数字：。”^\d{m,n}$”只能输入零和非零开头的数字：”^(0|[1-9][0-9])$”。只能输入有两位小数的正实数：”^[0-9]+(.[0-9]{2})?$”。只能输入有1~3位小数的正实数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js常用正则表达式">
+<meta property="og:url" content="http://yoursite.com/2019/02/04/js常用正则表达式/index.html">
 <meta property="og:site_name" content="Edison技术博客">
+<meta property="og:description" content="整数或者小数：^[0-9]+.{0,1}[0-9]{0,2}$只能输入数字：”^[0-9]$”。只能输入n位的数字：”^\d{n}$”。只能输入至少n位的数字：”^\d{n,}$”。只能输入m~n位的数字：。”^\d{m,n}$”只能输入零和非零开头的数字：”^(0|[1-9][0-9])$”。只能输入有两位小数的正实数：”^[0-9]+(.[0-9]{2})?$”。只能输入有1~3位小数的正实数">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-04T05:14:15.900Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Edison技术博客">
+<meta name="twitter:title" content="js常用正则表达式">
+<meta name="twitter:description" content="整数或者小数：^[0-9]+.{0,1}[0-9]{0,2}$只能输入数字：”^[0-9]$”。只能输入n位的数字：”^\d{n}$”。只能输入至少n位的数字：”^\d{n,}$”。只能输入m~n位的数字：。”^\d{m,n}$”只能输入零和非零开头的数字：”^(0|[1-9][0-9])$”。只能输入有两位小数的正实数：”^[0-9]+(.[0-9]{2})?$”。只能输入有1~3位小数的正实数">
   
     <link rel="alternate" href="/atom.xml" title="Edison技术博客" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-js常用正则表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-js常用正则表达式" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/02/04/js常用正则表达式/" class="article-date">
   <time datetime="2019-02-04T05:13:48.000Z" itemprop="datePublished">2019-02-04</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/04/js常用正则表达式/">js常用正则表达式</a>
+    <h1 class="article-title" itemprop="name">
+      js常用正则表达式
     </h1>
   
 
@@ -95,48 +97,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-JS中getYear-和getFullYear-区别分析" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/02/04/JS中getYear-和getFullYear-区别分析/" class="article-date">
-  <time datetime="2019-02-04T05:09:40.000Z" itemprop="datePublished">2019-02-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/02/04/JS中getYear-和getFullYear-区别分析/">JS中getYear()和getFullYear()区别分析</a>
-    </h1>
+    <a href="/2019/02/04/JS中getYear-和getFullYear-区别分析/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JS中getYear()和getFullYear()区别分析</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>getYear方法<br>js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：<br>var dayObj=new Date();<br>var myYears = ( dayObj.getYear() &lt; 1900 ) ? ( 1900 + dayObj.getYear() ) : dayObj.getYear();<br>document.write(myYears);</p>
-<p>getFullYear 方法<br>返回 Date 对象中用本地时间表示的年份值。<br>dateObj.getFullYear()<br>必选项 dateObj 参数为 Date 对象。<br>说明<br>要获取用全球标准时间 (UTC)表示的年份值，请使用 getUTCFullYear 方法。<br>getFullYear 方法以绝对数字的形式返回年份值。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/04/JS中getYear-和getFullYear-区别分析/" data-id="cjrpvruet00010bs6xh84ik9b" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
