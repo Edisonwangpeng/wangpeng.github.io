@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>JS中getYear()和getFullYear()区别分析 | Edison技术博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS中getYear()和getFullYear()区别分析">
+<meta property="og:url" content="http://yoursite.com/2019/02/04/JS中getYear-和getFullYear-区别分析/index.html">
+<meta property="og:site_name" content="Edison技术博客">
+<meta property="og:description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-04T05:10:08.935Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS中getYear()和getFullYear()区别分析">
+<meta name="twitter:description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+  
+    <link rel="alternate" href="/atom.xml" title="Edison技术博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Edison技术博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-JS中getYear-和getFullYear-区别分析" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/02/04/JS中getYear-和getFullYear-区别分析/" class="article-date">
+  <time datetime="2019-02-04T05:09:40.000Z" itemprop="datePublished">2019-02-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JS中getYear()和getFullYear()区别分析
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>getYear方法<br>js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：<br>var dayObj=new Date();<br>var myYears = ( dayObj.getYear() &lt; 1900 ) ? ( 1900 + dayObj.getYear() ) : dayObj.getYear();<br>document.write(myYears);</p>
+<p>getFullYear 方法<br>返回 Date 对象中用本地时间表示的年份值。<br>dateObj.getFullYear()<br>必选项 dateObj 参数为 Date 对象。<br>说明<br>要获取用全球标准时间 (UTC)表示的年份值，请使用 getUTCFullYear 方法。<br>getFullYear 方法以绝对数字的形式返回年份值。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/02/04/JS中getYear-和getFullYear-区别分析/" data-id="cjrpvmmx10000zks6e3cfvpps" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/02/04/JS中getYear-和getFullYear-区别分析/">JS中getYear()和getFullYear()区别分析</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 wangpeng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
