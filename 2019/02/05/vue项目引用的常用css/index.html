@@ -3,19 +3,19 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>JS中getYear()和getFullYear()区别分析 | Edison技术博客</title>
+  <title>vue项目引用的常用css | Edison技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+  <meta name="description" content="1.在手机端项目中，为了规范样式统一，通常要去掉浏览器自带的一些样式，例如：margin，padding，li前面的点，a标签的下划线等，因此可引入：reset.css，下载地址为：https://github.com/edisonwangpeng/phone-css/tree/master/css；2.在高分辨屏下，有时候border的1p会显示成2px,或者3px;在这引入：border.cs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS中getYear()和getFullYear()区别分析">
-<meta property="og:url" content="http://yoursite.com/2019/02/04/JS中getYear-和getFullYear-区别分析/index.html">
+<meta property="og:title" content="vue项目引用的常用css">
+<meta property="og:url" content="http://yoursite.com/2019/02/05/vue项目引用的常用css/index.html">
 <meta property="og:site_name" content="Edison技术博客">
-<meta property="og:description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+<meta property="og:description" content="1.在手机端项目中，为了规范样式统一，通常要去掉浏览器自带的一些样式，例如：margin，padding，li前面的点，a标签的下划线等，因此可引入：reset.css，下载地址为：https://github.com/edisonwangpeng/phone-css/tree/master/css；2.在高分辨屏下，有时候border的1p会显示成2px,或者3px;在这引入：border.cs">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-04T05:10:08.935Z">
+<meta property="og:updated_time" content="2019-02-06T01:53:39.201Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS中getYear()和getFullYear()区别分析">
-<meta name="twitter:description" content="getYear方法js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：var dayObj=new Date();var myYears = ( dayObj.getYear() &amp;lt; 1900">
+<meta name="twitter:title" content="vue项目引用的常用css">
+<meta name="twitter:description" content="1.在手机端项目中，为了规范样式统一，通常要去掉浏览器自带的一些样式，例如：margin，padding，li前面的点，a标签的下划线等，因此可引入：reset.css，下载地址为：https://github.com/edisonwangpeng/phone-css/tree/master/css；2.在高分辨屏下，有时候border的1p会显示成2px,或者3px;在这引入：border.cs">
   
     <link rel="alternate" href="/atom.xml" title="Edison技术博客" type="application/atom+xml">
   
@@ -64,10 +64,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-JS中getYear-和getFullYear-区别分析" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-vue项目引用的常用css" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/02/04/JS中getYear-和getFullYear-区别分析/" class="article-date">
-  <time datetime="2019-02-04T05:09:40.000Z" itemprop="datePublished">2019-02-04</time>
+    <a href="/2019/02/05/vue项目引用的常用css/" class="article-date">
+  <time datetime="2019-02-05T15:35:42.000Z" itemprop="datePublished">2019-02-05</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JS中getYear()和getFullYear()区别分析
+      vue项目引用的常用css
     </h1>
   
 
@@ -86,13 +86,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>getYear方法<br>js中得到当前年份做法是var dayObj=new Date(); dayObj.getYear()来得到年份，但是这样会出现浏览器的兼容性的问题，就是在IE中能得到我们想要的结果但是在FF（火狐）中就不行了，和我们要的结果相差1900年。可以这样：<br>var dayObj=new Date();<br>var myYears = ( dayObj.getYear() &lt; 1900 ) ? ( 1900 + dayObj.getYear() ) : dayObj.getYear();<br>document.write(myYears);</p>
-<p>getFullYear 方法<br>返回 Date 对象中用本地时间表示的年份值。<br>dateObj.getFullYear()<br>必选项 dateObj 参数为 Date 对象。<br>说明<br>要获取用全球标准时间 (UTC)表示的年份值，请使用 getUTCFullYear 方法。<br>getFullYear 方法以绝对数字的形式返回年份值。</p>
+        <p>1.在手机端项目中，为了规范样式统一，通常要去掉浏览器自带的一些样式，例如：margin，padding，li前面的点，a标签的下划线等，<br>因此可引入：reset.css，下载地址为：<a href="https://github.com/edisonwangpeng/phone-css/tree/master/css；" target="_blank" rel="noopener">https://github.com/edisonwangpeng/phone-css/tree/master/css；</a><br>2.在高分辨屏下，有时候border的1p会显示成2px,或者3px;在这引入：border.css，可解决此问题，<br>下载地址为：<a href="https://github.com/edisonwangpeng/phone-css/tree/master/css；" target="_blank" rel="noopener">https://github.com/edisonwangpeng/phone-css/tree/master/css；</a><br>3.手机端项目中有的会有click事件的延迟300ms加载，用npm下载fastclcik，可解决此问题，<br>用法：fastClick.attach(document.body)；</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/04/JS中getYear-和getFullYear-区别分析/" data-id="cjrsji9lp0000v8s6yku4mky3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/05/vue项目引用的常用css/" data-id="cjrsji9lt0001v8s6idiassiw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -101,15 +100,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/02/04/js常用正则表达式/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          js常用正则表达式
-        
-      </div>
-    </a>
   
+    <a href="/2019/02/04/js常用正则表达式/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js常用正则表达式</div>
+    </a>
   
 </nav>
 
